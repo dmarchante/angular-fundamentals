@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <meta charset="utf=8">
+        <meta name="viewport" content="width=device-width">
+        <title>Order Form App</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <div ng-controller="OrderController as order">
+            <order-form data="order.customerOrder" submit="order.submitOrder();"></order-form>
+        </div>
+
+        <!-- Angular 1.5.0 -->
+        <script src="js/libs/angular.js"></script>
+
+        <!-- Angular Modules -->
+        <script src="js/app.js"></script>
+
+        <!-- Angular Controllers -->
+        <script src="js/controllers/OrderController.js"></script>
+        <script src="js/controllers/OrderFormController.js"></script>
+
+        <!-- Angular Directives -->
+        <script src="js/directives/order-form.directive.js"></script>
+    </body>
+</html>
